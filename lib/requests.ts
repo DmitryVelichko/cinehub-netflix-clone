@@ -12,6 +12,7 @@ export async function getApiResponse(sub_url: string) {
   
       const res = await fetch(url, options);
       const data = res.ok ? await res.json() : Promise.reject(res);
+    
   
       return data;
   
