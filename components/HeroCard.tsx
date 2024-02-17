@@ -1,6 +1,6 @@
 "use client";
 
-// import { baseImgUrl } from "@lib/constants";
+import { baseImgUrl } from "@lib/constants";
 import { Movie } from "@lib/types";
 import { InfoOutlined, PlayCircleOutlineOutlined } from "@mui/icons-material";
 import { useState } from "react";
@@ -16,13 +16,13 @@ const HeroCard = ({ trendingMovie }: { trendingMovie: Movie }) => {
     <>
       <div className="hero">
         <div className="hero-bg">
-          {/* <img
+          <img
             src={`${baseImgUrl}${
               trendingMovie?.backdrop_path || trendingMovie?.poster_path
             }`}
             alt="trending-movie"
             className="hero-bg-image"
-          /> */}
+          />
           <div className="overlay"></div>
         </div>
 
