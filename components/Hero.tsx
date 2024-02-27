@@ -6,7 +6,6 @@ const Hero = async () => {
   const randonNumber = Math.floor(Math.random() * trending.length)
   const trendingMovie = trending[randonNumber]
 
-
   return (
     <div>
       <HeroCard trendingMovie={trendingMovie}/>

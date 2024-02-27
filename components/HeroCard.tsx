@@ -4,7 +4,7 @@ import { baseImgUrl } from "@lib/constants";
 import { Movie } from "@lib/types";
 import { InfoOutlined, PlayCircleOutlineOutlined } from "@mui/icons-material";
 import { useState } from "react";
-// import Modal from "./Modal";
+import Modal from "./Modal";
 
 const HeroCard = ({ trendingMovie }: { trendingMovie: Movie }) => {
   const [showModal, setShowModal] = useState(false);
@@ -42,7 +42,7 @@ const HeroCard = ({ trendingMovie }: { trendingMovie: Movie }) => {
         </div>
       </div>
 
-      {/* {showModal && <Modal movie={trendingMovie} closeModal={closeModal} />} */}
+      {showModal && <Modal movie={trendingMovie} closeModal={closeModal} />}
     </>
   );
 };
